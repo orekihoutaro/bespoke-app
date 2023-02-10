@@ -1,12 +1,13 @@
 import React from 'react'
 import logo from '../assets/logo.png'
 import { navLinks } from '../constants'
-console.log(logo)
+import ContactUs from '../components/ContactUs'
+
 
 const Navbar = () => {
   return (
     <nav className="w-full flex py-6 px-6 justify-between items-center navbar">
-        <img src={ logo } alt="logo" className="w-[128px] h-[128px] cursor-pointer"/>
+        <img src={ logo } alt="logo" className="w-[145px] h-[128px] cursor-pointer"/>
         <h6 className="sm:flex hidden pb-20 relative left-[-1.5%] font-semibold font-poppins">Bespoke Enterprise Solutions Inc.</h6>
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
             {navLinks.map((nav, index) => 
@@ -20,6 +21,7 @@ const Navbar = () => {
                     </a>
                 </li>
             ))}
+            <ContactUs/>
         </ul>
     </nav>
   )
