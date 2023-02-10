@@ -1,6 +1,10 @@
 import React from 'react'
 import Navbar from './components/Navbar'
+import WhatsAppFloatingButton from './components/WhatsAppFloatingButton'
+import Hero from './components/Hero'
 import styles from './style'
+import Footer from './components/Footer'
+
 
 function App() {
 
@@ -11,6 +15,12 @@ function App() {
           <Navbar />
         </div>
       </div>
+
+      <div className={`${styles.flexStart} ${styles.paddingX}`}>
+        <Hero />
+      </div>
+      <Footer/>
+      <WhatsAppFloatingButton />
     </div>
   )
 }
