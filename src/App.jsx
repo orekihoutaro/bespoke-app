@@ -10,13 +10,13 @@ function App() {
 
   return (
     <div className="bg-white">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>
       </div>
 
-      <div className={`${styles.flexStart} ${styles.paddingX}`}>
+      <div className={`${styles.flexStart}`}>
         <Hero />
       </div>
       <Footer/>
