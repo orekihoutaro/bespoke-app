@@ -4,7 +4,8 @@ import WhatsAppFloatingButton from './components/WhatsAppFloatingButton'
 import Hero from './components/Hero'
 import styles from './style'
 import Footer from './components/Footer'
-
+import ImgButton from './components/ImgButton'
+import logo from './assets/logo.png'
 
 function App() {
 
@@ -18,6 +19,10 @@ function App() {
 
       <div className={`${styles.flexStart}`}>
         <Hero />
+      </div>
+
+      <div className="w-full h-full">
+        <ImgButton img_src={logo} direct="home" props="My Bespoke Staff Marketing"/>
       </div>
       <Footer/>
       <WhatsAppFloatingButton />
